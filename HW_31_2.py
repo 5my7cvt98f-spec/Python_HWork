@@ -6,5 +6,6 @@
 # Удалить лишние пробелы и пустые значения.
 
 import re
+
 tag_input = "python, data-science / machine-learning; AI neural-networks"
-print(re.split(r"\b[/-/./,/;/// ]+\b",tag_input))
+print(re.split(r"[,;/\s]+", tag_input))
